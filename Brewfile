@@ -1,0 +1,12 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+brew "readline"
+brew "sqlite"
+brew "python@3.9"
+brew "glib"
+brew "mysql@5.7", restart_service: true
+brew "ruby-build"
+brew "rbenv"
+brew "shared-mime-info"

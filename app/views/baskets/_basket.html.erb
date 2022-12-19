@@ -1,0 +1,22 @@
+<div id="<%= dom_id basket %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Total:</strong>
+    <%= basket.total %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Discount:</strong>
+    <%= basket.discount %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">To pay:</strong>
+    <%= basket.to_pay %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this basket", basket, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this basket', edit_basket_path(basket), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

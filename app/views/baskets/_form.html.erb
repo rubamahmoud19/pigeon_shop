@@ -1,0 +1,14 @@
+<%= form_with(model: @basket, class: "contents basket-contents")do |form| %>
+
+  <div class="my-5">
+    <%= form.label :total %>
+    <div class = "basket-total">10</div>
+  </div>
+
+  <div class = "selected-products">
+  </div>
+
+  <div class="inline">
+    <%= form.submit "Save",  class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+  </div>
+<% end %>
